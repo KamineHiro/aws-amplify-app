@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Todoアプリケーション
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+シンプルで使いやすいTodoリスト管理アプリケーションです。
 
-Currently, two official plugins are available:
+## デプロイ先
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+アプリケーションは以下のURLでご利用いただけます：
+https://main.ddejv3a8xaumi.amplifyapp.com
 
-## Expanding the ESLint configuration
+## 主な機能
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✨ タスクの追加
+- ✅ タスクの完了/未完了の切り替え
+- 🗑️ タスクの削除
+- 💾 ブラウザでのデータ保持
 
-- Configure the top-level `parserOptions` property like this:
+## 使用技術
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React 19
+- TypeScript
+- Vite
+- モダンなCSSスタイリング
+
+## ローカル開発環境のセットアップ
+
+```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+その後、ブラウザで http://localhost:5173 を開いてアプリケーションにアクセスできます。
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ビルドコマンド
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+# プロダクションビルド
+npm run build
+
+# ビルドのプレビュー
+npm run preview
 ```
+
+## ESLint設定
+
+本プロジェクトではTypeScript対応のESLint設定を使用しています。詳細な設定は `eslint.config.js` をご確認ください。
+
+## 開発者向け情報
+
+- HMR（Hot Module Replacement）対応
+- TypeScriptの厳格な型チェック
+- モダンなESLint設定による高品質なコード管理
+
+## ライセンス
+
+MITライセンス
+
+---
+
+作成：2024年2月
