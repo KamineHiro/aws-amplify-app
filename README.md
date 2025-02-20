@@ -43,8 +43,6 @@ npm run build
 npm run preview
 ```
 
-MITライセンス
-
 ---
 
 作成：2024年2月
