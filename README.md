@@ -43,18 +43,6 @@ npm run build
 npm run preview
 ```
 
-## ESLint設定
-
-本プロジェクトではTypeScript対応のESLint設定を使用しています。詳細な設定は `eslint.config.js` をご確認ください。
-
-## 開発者向け情報
-
-- HMR（Hot Module Replacement）対応
-- TypeScriptの厳格な型チェック
-- モダンなESLint設定による高品質なコード管理
-
-## ライセンス
-
 MITライセンス
 
 ---
